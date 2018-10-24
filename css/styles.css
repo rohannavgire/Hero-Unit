@@ -67,8 +67,9 @@ body {
     background: url('../images/banner.jpg') no-repeat;
     background-size: contain;
     width: 100vw;
-    height: 80vh;
+    height: 60vh;
     padding-top: 4em;
+    margin: 0;
     color: white;
     text-align: center;
 }
@@ -92,6 +93,7 @@ body {
 
 .paper h1 {
     text-align: center;
+    padding: 0;
 }
 
 .paper-row {
@@ -108,9 +110,22 @@ body {
     width: 300px;
 }
 
+footer {
+    background-color: rgb(0, 119, 255);
+    height: 10vh;
+    width: 100vw;
+}
+
+footer h3 {
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    padding-top: 1.5em;
+}
+
 @media(max-width: 576px) {
     .navigate {
-        margin-left: 10vw;
+        margin-left: 5vw;
     }
 
     .navigate ul li {
@@ -127,20 +142,24 @@ body {
         border-bottom: 1px solid black;
     }
 
-    .signUp-button {        
+    .signUp-button {
+        width: 40vw;     
         margin-right: 5vw;
+        margin-left: 5vw;
         padding: 10px;
     }
     
     .signUp-button:hover{
-        width: 30vw;
+        width: 40vw;
         margin-right: 5vw;
+        margin-left: 5vw;
+        padding: 10px;
     }
 
     .hero-unit-container {
         background: url('../images/banner.jpg') no-repeat;
         width: 100vw;
-        height: 80vh;
+        height: 60vh;
         padding-top: 4em;
         color: white;
         text-align: center;
@@ -148,5 +167,15 @@ body {
 
     .paper h1 {
         margin-top: 1em;
+    }
+
+    .paper-row {
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .page {
+        margin: 1em;        
+        margin-left: 12vw;
     }
 }
